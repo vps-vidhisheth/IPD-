@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.color{
+    background: rgb(19,15,44);
+background: radial-gradient(circle, rgba(19,15,44,1) 0%, rgba(28,32,76,1) 180%);
+}
+
+.borderAdd{
+    box-shadow: 4px 4px 50px white;
+}
