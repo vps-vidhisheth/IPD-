@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/IPD-/static/css/main.7d7a70b4.css",
+    "main.js": "/IPD-/static/js/main.d94b39bf.js",
+    "static/media/Ellipse 13.png": "/IPD-/static/media/Ellipse 13.c4f3c354a7b0f423b784.png",
+    "static/media/home_women_icon_prev_ui.png": "/IPD-/static/media/home_women_icon_prev_ui.4f3f6a76dc802a817116.png",
+    "static/media/login_icon_prev_ui.png": "/IPD-/static/media/login_icon_prev_ui.fbd8b6422ec3095a78d3.png",
+    "static/media/login_women_prev_ui.png": "/IPD-/static/media/login_women_prev_ui.c071d8a913c5d436f101.png",
+    "static/media/Group 11.svg": "/IPD-/static/media/Group 11.c448ad1a56ca7e3181d24323a1de70fe.svg",
+    "index.html": "/IPD-/index.html",
+    "main.7d7a70b4.css.map": "/IPD-/static/css/main.7d7a70b4.css.map",
+    "main.d94b39bf.js.map": "/IPD-/static/js/main.d94b39bf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7d7a70b4.css",
+    "static/js/main.d94b39bf.js"
+  ]
+}
