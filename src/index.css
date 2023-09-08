@@ -17,6 +17,10 @@ background: radial-gradient(circle, rgba(19,15,44,1) 0%, rgba(28,32,76,1) 180%);
     box-shadow: 4px 4px 50px white;
 }
 
+.active{
+    cursor:default;
+}
+
 input{
     all: unset;
     min-width: 300px;
