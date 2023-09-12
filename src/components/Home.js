@@ -3,6 +3,7 @@ import Footer from "./Footer";
 import womanImage from './../assets/Ellipse 13.png';
 import ellipseImage from './../assets/Ellipse 11.png';
 import women_icon from './../assets/home_women_icon_prev_ui.png';
+import ellipseImageBlack from './../assets/Ellipse 11-black.png'
 
 import { useNavigate } from 'react-router-dom';
 // bg-[#DEE4E7]
@@ -21,7 +22,11 @@ const Home = ({dark}) => {
             <p className='opacity-80 pb-8'>Voting can create big changes. Vote for spreading positivity in the community.</p>
           </div>
           <div className='relative '>
-            <img src={ellipseImage} className='bottom-[-90px] bg-transparent left-[0px] top-[315px] relative' />
+            {
+              dark ? <img src={ellipseImage} className='bottom-[-90px] bg-transparent left-[0px] top-[315px] relative' /> :
+                    <img src={ellipseImageBlack} className='bottom-[-90px] bg-transparent left-[0px] top-[315px] relative' />
+            }
+            
             <img src={womanImage} className=' rounded-[50%] top-0 shrink-0 borderAdd absolute'/> 
           </div>
         </div>
