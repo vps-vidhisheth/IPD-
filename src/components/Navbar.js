@@ -14,8 +14,8 @@ const Navbar = ({dark,setDark}) => {
             </div>
         </NavLink>
         <div className=''>
-            <NavLink to='/login' className='px-5 py-2 text-[20px] font-normal leading-normal inline border-r-2 border-r-gray'>Login</NavLink>
-            <NavLink to='/sign-up' className='px-5 py-2 text-[20px] font-normal leading-normal inline border-r-2 border-r-gray'>Sign-up</NavLink>
+            <NavLink to='/login' className={`px-5 py-2 text-[20px] font-normal leading-normal inline border-r-2 ${dark ? 'border-r-gray' : 'border-r-gray-500'}`}>Login</NavLink>
+            <NavLink to='/sign-up' className={`px-5 py-2 text-[20px] font-normal leading-normal inline border-r-2 ${dark ? 'border-r-gray' : 'border-r-gray-500'}`}>Sign-up</NavLink>
             <img src={modeImage} onClick={()=>{setDark(!dark)}} className='inline cursor-pointer px-1' />
         </div>
     </div>
