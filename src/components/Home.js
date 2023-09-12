@@ -5,19 +5,20 @@ import ellipseImage from './../assets/Ellipse 11.png';
 import women_icon from './../assets/home_women_icon_prev_ui.png';
 
 import { useNavigate } from 'react-router-dom';
-const Home = () => {
+// bg-[#DEE4E7]
+const Home = ({dark}) => {
   const navigate = useNavigate();
   const loginHandler = ()=>{
     navigate('/login');
   }
   return (
-    <div className='color'>
+    <div className={`${dark ? 'color text-white' : 'bg-[#DEE4E7] text-black'}`}>
         <div className='flex mb-[400px] pt-[80px] px-2 justify-around flex-wrap'>
           <div className='w-[634px] flex flex-col justify-center'>
-            <p className='text-white text-[55.69px] font-normal'>
+            <p className='text-[55.69px] font-normal'>
               'Empower communities. Create change.'
             </p>
-            <p className='text-[#CBCBCB] pb-8'>Voting can create big changes. Vote for spreading positivity in the community.</p>
+            <p className='opacity-80 pb-8'>Voting can create big changes. Vote for spreading positivity in the community.</p>
           </div>
           <div className='relative '>
             <img src={ellipseImage} className='bottom-[-90px] bg-transparent left-[0px] top-[315px] relative' />
@@ -25,14 +26,14 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='text-white tracking-[4.16px] lg:text-[49px] flex flex-col justify-center items-center'>
+        <div className='tracking-[4.16px] lg:text-[49px] flex flex-col justify-center items-center'>
           <p>Your passion for creating changes,</p>
           <p>to make a difference begins with a logging in.</p>
         </div>
 
         <div className='relative mb-20 flex justify-center pt-14'>
           <div className='relative'>
-          <button onClick={loginHandler} className='bg-white absolute px-10 top-[-15px] right-[6px] py-2 text-[27.5px] font-semibold'>Login</button>
+          <button onClick={loginHandler} className={`${dark ? 'bg-white text-black' : 'bg-black opacity-75 text-white'}  absolute px-10 top-[-15px] right-[6px] py-2 text-[27.5px] font-semibold`}>Login</button>
           <p className='w-[153px] h-[47.4px] border-white border-2'></p>
           </div>
         </div>
@@ -66,7 +67,7 @@ const Home = () => {
               </svg>
             </div>
 
-            <div className='text-white my-3'>
+            <div className='my-3'>
               <p className='rotate-[-57.806deg] absolute top-[28px] left-[16px]'>S</p>
               <p className='rotate-[-43.027deg] absolute top-[20px] left-[24px]'>c</p>
               <p className='rotate-[-28.917deg] absolute top-[14px] left-[32px]'>r</p>
@@ -81,7 +82,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className='text-white'>
+        <div className=''>
 
           <div>
             <h1 className='text-[40px] text-center'>How to Vote ?</h1>
@@ -227,7 +228,7 @@ const Home = () => {
           </div>
 
         </div>
-        <Footer/>
+        <Footer dark={dark}/>
     </div>
   )
 }

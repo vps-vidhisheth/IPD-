@@ -8,9 +8,13 @@
     box-sizing: border-box;
 }
 
+body{
+    min-width: 100vw;
+}
+
 .color{
     background: rgb(19,15,44);
-background: radial-gradient(circle, rgba(19,15,44,1) 0%, rgba(28,32,76,1) 180%);
+    background: radial-gradient(circle, rgba(19,15,44,1) 0%, rgba(28,32,76,1) 180%);
 }
 
 .borderAdd{
@@ -24,22 +28,24 @@ background: radial-gradient(circle, rgba(19,15,44,1) 0%, rgba(28,32,76,1) 180%);
 input{
     all: unset;
     min-width: 300px;
-    background-color: white;
     opacity: 80%;
     border-radius: 5px;
-    color: rgb(46, 41, 41);
-    padding: 8px;
+    /* color: white; */
+    padding: 4px;
     font-size: 24px;
 }
 
 input::placeholder{
     all: unset;
     padding: 5px;
-    background-color: white;
+    /* background-color: white; */
     opacity: 80%;
     border-radius: 5px;
 }
 
 .sign-up{
     background: linear-gradient(90deg, #FFF -2.94%, rgba(255, 255, 255, 0.00) 101.9%);
+}
+.sign-up-light{
+    background: linear-gradient(90deg, #000000 -2.94%, rgba(255, 255, 255, 0.00) 101.9%);
 }
