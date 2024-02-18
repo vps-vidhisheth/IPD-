@@ -2,6 +2,7 @@ import React from 'react';
 import electionImage from './../assets/image 3.png';
 import modeImage from './../assets/Group 11.svg'
 import { Link, NavLink } from 'react-router-dom';
+
 const Navbar = ({dark,setDark}) => {
 
   return (
