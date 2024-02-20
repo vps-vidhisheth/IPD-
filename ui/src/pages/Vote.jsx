@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../components/Navbar';
+import { NavLink } from 'react-router-dom';
 
 const Vote = () => {
   return (
@@ -18,6 +19,14 @@ const Vote = () => {
             <div>
                 <input type='checkbox' id='checkbox1' className='' />
                 <label htmlFor='checkbox1'> I have read all the information and I confirm the information to be correct </label>
+            </div>
+            <div>
+                <input type='checkbox' id='checkbox1' className='' />
+                <label htmlFor='checkbox1'> I have read all the instructions, terms and conditions and I agree them. </label>
+            </div>
+            <div className='flex justify-between mt-20'>
+              <NavLink> Contact Us </NavLink>
+              <NavLink className='bg-slate-800 px-5 py-1 rounded-3xl border' > Next </NavLink>
             </div>
         </div>
     </div>
