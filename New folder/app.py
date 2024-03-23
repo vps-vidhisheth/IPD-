@@ -1,6 +1,8 @@
 from flask import Flask, render_template, jsonify, request
 from flask_socketio import SocketIO, emit
 import subprocess
+import json 
+from flask_cors import CORS
 from cryptography.fernet import Fernet
 
 # Generate a key for encryption
@@ -8,6 +10,7 @@ key = Fernet.generate_key()
 cipher_suite = Fernet(key)
 
 app = Flask(__name__)
+CORS(app, resources={r"/api/*": {"origins": "http://localhost:5000"}})
 socketio = SocketIO(app)
 
 # Encrypt function
@@ -24,9 +27,9 @@ def decrypt_data(encrypted_data):
 def index():
     return render_template('app.html')
 
-@app.route('/capture', methods=['POST'])
-def capture():
-    # Run the main.py script asynchronously
+@app.route('/login', methods=['POST'])
+def login():
+    # Run the main.py script asynchronously when login is triggered
     subprocess.Popen(['python', 'main.py'])
     return 'Image capture process started...'  # Indicate that the process has started
 
